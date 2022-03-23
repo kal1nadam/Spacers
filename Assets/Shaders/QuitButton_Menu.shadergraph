@@ -1898,7 +1898,7 @@
     },
     "m_Name": "Negate",
     "m_DrawState": {
-        "m_Expanded": true,
+        "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
             "x": -3606.0,

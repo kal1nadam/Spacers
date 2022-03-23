@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayButton_Menu
-  m_Shader: {fileID: -6465566751694194690, guid: f2a638f404818084687bdf5022260db4, type: 3}
+  m_Name: StatsButton_PauseMenu
+  m_Shader: {fileID: -6465566751694194690, guid: b1ae2ec90f63bbb44bb95471e9451bb9, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e460c6a88ffcf0a4c977b881ee869570, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2d9ffa77301eabb479a0f149f9e08d25, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -36,9 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Thicknes: 0.007935075
-    - Vector1_0e14a8170e93431ea2e36646b467145b: 0.0075
+    - Thicknes: 0.0017
     m_Colors:
-    - Color_f19f0cf569a04bb4a555e9b41c928768: {r: 0, g: 1533.9922, b: 0, a: 1}
-    - OutlineColor: {r: 0, g: 10205, b: 0, a: 1}
+    - OutlineColor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

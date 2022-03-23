@@ -8,8 +8,8 @@ public class SceneController : MonoBehaviour
 {
     public Animator sceneTransition;
 
-    public Button playButton;
-    public Button quitButton;
+    //public Button playButton;
+    //public Button quitButton;
 
 
     public void Play()

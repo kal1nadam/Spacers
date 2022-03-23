@@ -13,9 +13,7 @@ public class Menu_Button : MonoBehaviour, ISelectHandler, IDeselectHandler
     private float minThicknes = 0.0017f;
     private float maxThicknes = 0.0080f;
 
-    /* = new Color(0, 10205, 0, 1);*/
-    public int _red;
-    public int _green;
+    public Color _color;
     private Color intensity;
     private Color notIntensity = new Color(0, 0, 0, 0);
 
@@ -24,7 +22,7 @@ public class Menu_Button : MonoBehaviour, ISelectHandler, IDeselectHandler
     private void Start()
     {
         img = GetComponent<Image>();
-        intensity = new Color(_red, _green, 0, 1);
+        intensity = new Color(_color.r * 10000, _color.g * 10000, _color.b * 10000, 1);
 
         increasing = true;
 

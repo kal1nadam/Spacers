@@ -6,12 +6,11 @@ using UnityEngine.UI;
 
 public class Menu_Button : MonoBehaviour, ISelectHandler, IDeselectHandler
 {
-
     private Image img;
     private bool selected;
     private bool increasing;
-    private float minThicknes = 0.0017f;
-    private float maxThicknes = 0.0080f;
+    private float minThicknes = 0.003f;
+    private float maxThicknes = 0.008f;
 
     public Color _color;
     private Color intensity;
@@ -53,9 +52,6 @@ public class Menu_Button : MonoBehaviour, ISelectHandler, IDeselectHandler
 
     public void OnSelect(BaseEventData eventData)
     {
-        //img.material.SetFloat("Thicknes", this.maxThicknes);
-        //img.material.SetColor("OutlineColor", this.intensity);
-
         //Debug.Log("SELECT" + this.name);
         img.material.SetColor("OutlineColor", this.intensity);
         interpolate = minThicknes;
@@ -64,9 +60,6 @@ public class Menu_Button : MonoBehaviour, ISelectHandler, IDeselectHandler
 
     public void OnDeselect(BaseEventData eventData)
     {
-        //img.material.SetFloat("Thicknes", this.minThicknes);
-        //img.material.SetColor("OutlineColor", this.notIntensity);
-
         //Debug.Log("DESELECT" + this.name);
         img.material.SetFloat("Thicknes", minThicknes);
         img.material.SetColor("OutlineColor", this.notIntensity);

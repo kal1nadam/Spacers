@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     public static bool gameIsPaused;
 
     public GameObject pauseMenuUI;
+    public Animator crossFadeAnimator;
 
 
     // Update is called once per frame
@@ -49,7 +50,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         CursorDisable.disable = false;
-        SceneManager.LoadScene("Menu");
+        StartCoroutine(SwitchToMenu());
     }
 
     public void Stats()
@@ -57,5 +58,13 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("STATS");
         //Time.timeScale = 1;
         //SceneManager.LoadScene("Stats");
+    }
+
+
+    private IEnumerator SwitchToMenu()
+    {
+        crossFadeAnimator.SetTrigger("SwitchScene");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Menu");
     }
 }

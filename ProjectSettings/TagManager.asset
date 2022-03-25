@@ -58,3 +58,6 @@ TagManager:
   - name: PauseMenu
     uniqueID: 3326534747
     locked: 0
+  - name: crossFade
+    uniqueID: 322535059
+    locked: 0

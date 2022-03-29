@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public Image fill;
     private int health;
 
-    [SerializeField] private float speed;
+    public static int speed;
     [SerializeField] private GameObject rotationHelpObject;
 
     [SerializeField] private GameObject mainCamera;
@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         //HEALTH BAR
+        speed = 5;
         health = 20;
         healthBar.maxValue = health;
         healthBar.value = health;
